@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Home Page </title>
+    <style>
+body {
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    background-size: 100% 100%;
+    font-family: sans-serif, Times New Roman;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    max-width: 150%;
+}
+
+
+nav {
+    margin-bottom: 20px;
+    background: #594848;
+    width: 100%;
+    height: 5%;
+    overflow: visible;  
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+li {
+    float: left;
+    font-size: 18px;
+}
+
+nav a {
+    margin-top: 5px;
+    width: 120px;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    background: #594848;
+    font-size: 25px;
+    color: white;
+    padding: 30px 30px;
+    font-family: Arial;
+
+}
+
+nav a:hover {
+    background: skyblue;
+    color: black;
+}
+
+
+.home-container {
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #999;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile img {
+    max-width: 70%;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 10px;
+    color:   #0033cc; 
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color:   #0033cc; 
+}
+
+p {
+    font-size: 16px;
+    color: #3366ff ;
+    justify-content: flex-start; 
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0033cc; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #cc0000;
+    text-decoration: underline;
+}
+    </style>
+</head> 
+<body>
+    <nav>
+        <ul>
+            <li><a href="aboutpage.html"> About </a> </li>
+            <li><a href="gallerypage1.html"> Gallery </a> </li>
+        </ul>
+    </nav>
+    <div class="home-container">
+        <div class="profile">
+            <img src="manilyn.jpeg" alt="Your-Name">
+            <h1> Manilyn Esteban Quilo </h1>
+            <h3>Bachelor of Science in Computer Science 1</h3>
+            <p> Greetings! I'm Manilyn, and I'm thrilled to welcome you to my corner of the web, where I've featured the exciting event, LUXMUNDI'S CUP 2023. Join me as I unfold the highlights, captures, and stories from this incredible experience. From the pulse-pounding moments on the field to the behind-the-scenes magic, this space is your front-row seat to the LUXMUNDI'S CUP 2023 journey. Thanks for being here, and let's relive the memories together! </p>
+            <a href="index.html" class="logout-button"> Logout </a>
+        </div>
+    </div>
+</body>
+</html>

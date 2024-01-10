@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;  
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	height: auto;
+	background: #dedede;
+	border-radius: 5px;
+}
+
+.label {
+	padding: 20px 130px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #130f40;
+}
+
+.login_form {
+	padding: 20px 40px;
+}
+
+.login_form .font {
+	font-size: 18px;
+	color: #130f40;
+	margin: 5px 0;
+}
+
+.login_form input {
+	height: 40px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+}
+ 
+.login_form .font2 {
+	margin-top: 30px;
+}
+
+.login_form button {
+	margin: 45px 0 30px 0;
+	height: 45px;
+	width: 365px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bolder;
+	background: #1A237E;
+	border-radius: 3px;
+	border: 1px solid #3949AB;
+	transition: .5s;
+}
+
+.login_form button:hover {
+	background: #cc0000;
+	text-decoration: underline;
+}
+
+.login_form #email_error,
+.login_form #pass_error {
+    margin: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #C62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="label">User Login</h1>
+        <form id="form" class="login_form" action="homepage.html" method="get">
+            <div class="font">Email</div>
+            <input autocomplete="off" type="text" id="email" name="email">
+            <div id="email_error">Please fill up your Email</div>
+            <div class="font font2">Password</div>
+            <input type="password" id="password" name="password">
+            <div id="pass_error">Please fill up your Password</div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+<script>
+        const email = document.getElementById('email')
+        const password = document.getElementById('password')
+        const form = document.getElementById('form')
+    
+        form.addEventListener('submit', (e) => {
+          let messages = []
+          if (password.value !== 'manilyn') {
+          alert("invalid password!");
+          e.preventDefault()
+          errorElement.innerText = messages.join(', ')
+        }
+    
+          if (email.value !== 'manilyn@gmail.com') {
+          alert("invalid email!");
+          e.preventDefault()
+          errorElement.innerText = messages.join(', ')
+        }
+        })
+</script>
+</body>
+</html>
